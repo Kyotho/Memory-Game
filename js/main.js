@@ -77,7 +77,7 @@ function shuffleCards() {
 }
 
 function endGame() {
-  if (matchedCards == 6) {
+  if (matchedCards == 16) {
     // console.log('test', modal);
     modal.classList.add('show');
     finalMoves.innerHTML = moves;
