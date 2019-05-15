@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Memory Game</h1>
+    <div class="container container--game">
+      <div class="card game__card" data-framework="backpack">
+        <img src="./images/backpack.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="backpack">
+        <img src="./images/backpack.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="camping">
+        <img src="./images/camping.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="camping">
+        <img src="./images/camping.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="compass">
+        <img src="./images/compass.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="compass">
+        <img src="./images/compass.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="knife">
+        <img src="./images/knife.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="knife">
+        <img src="./images/knife.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="knife_tool">
+        <img src="./images/knife_tool.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="knife_tool">
+        <img src="./images/knife_tool.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="lighter">
+        <img src="./images/lighter.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="lighter">
+        <img src="./images/lighter.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="rope">
+        <img src="./images/rope.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="rope">
+        <img src="./images/rope.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="torch">
+        <img src="./images/torch.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+      <div class="card game__card" data-framework="torch">
+        <img src="./images/torch.svg" alt="" class="front-face" />
+        <div class="back-face"></div>
+      </div>
+    </div>
+
+    <div id="overlay" class="container container--modal">
+      <div class="modal__popup">
+        <ion-icon
+          id="closeModal"
+          name="close-circle-outline"
+          class="icon icon--close"
+        ></ion-icon>
+        <div class="modal__infos">
+          <h2 class="modal__title">Congratulations!</h2>
+          <p class="modal__moves">
+            You won with <span id="moves--counter"> </span> moves
+          </p>
+        </div>
+        <div id="play-again" class="modal__button" onclick="play();">
+          Play again
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
